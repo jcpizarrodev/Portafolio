@@ -119,11 +119,14 @@ mejorándolo con los aprendizajes del módulo 10.
 
 ------------------------------------------------------------------------
 
-##  Evidencias
+##  Proyectos Destacados
 
-Se incluyen capturas de pantalla del Home, Sobre Mí, Habilidades,
-Proyectos, Servicios y Contacto en el documento entregado en la
-actividad.
+Se incluyen link de proyectos destacados contenidos en https://github.com/jp21101326/TD_JS0081:
+
+-   CiberSeguridad - Protege tu Mundo Digital: Modulo_2/Evaluación del módulo
+-   Aplicación de Gestión de Productos en un E-Commerce: Modulo_4/M4_Evaluación de portafolio
+-   Tienda Online - Sistema de Gestión de Productos: Modulo_6/M6_Evaluacion_portafolio
+-   Proyecto Usuarios y Roles: Modulo_7/M7_Evaluacion_modulo
 
 ------------------------------------------------------------------------
 
