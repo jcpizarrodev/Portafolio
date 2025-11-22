@@ -162,12 +162,12 @@
 								<span class="badge bg-light text-dark">Bootstrap</span>
 								<span class="badge bg-light text-dark">JavaScript</span>							
                            </div>
-                           <a href="#" class="btn btn-outline-primary btn-sm stretched-link" data-bs-toggle="modal" data-bs-target="#modalCiberseguridad">Ver Detalles</a>
+                           <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm stretched-link open-project" data-id="ciberseguridad" data-bs-toggle="modal" data-bs-target="#projectModal">Ver Detalles</a>
                         </div>
                     </div>
                 </div>
                  <div class="col-md-4">
-                    <div class="card project-card h-100 border-0 shadow-sm">
+                    <div class="card project-card h-100 border-0 shadow-sm"> 
                         <img src="assets/img/proyectos_9.jpg" class="card-img-top" alt="Proyecto 2">
                         <div class="card-body">
                             <h5 class="card-title">Tienda Online</h5>
@@ -177,8 +177,7 @@
                                 <span class="badge bg-light text-dark">CSS</span>
                                 <span class="badge bg-light text-dark">API</span>								
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm stretched-link" data-bs-toggle="modal" data-bs-target="#modalTiendaOnline">Ver Detalles
-                            </a>
+                            <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm stretched-link open-project" data-id="tiendaonline"  data-bs-toggle="modal" data-bs-target="#projectModal">Ver Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +193,7 @@
 								<span class="badge bg-light text-dark">HBS</span>
 								<span class="badge bg-light text-dark">REST API</span>
                             </div>
-                            <a href="#" class="btn btn-outline-primary btn-sm stretched-link" data-bs-toggle="modal" data-bs-target="#modalLibros">Ver Detalles</a>
+                            <a href="javascript:void(0)" class="btn btn-outline-primary btn-sm stretched-link open-project" data-id="libros"  data-bs-toggle="modal" data-bs-target="#projectModal">Ver Detalles</a>
                         </div>
                     </div>
                 </div>
@@ -299,210 +298,20 @@
         </div>
     </section>
 
-	<!-- Modal -->
-	<div class="modal fade" id="modalTiendaOnline" tabindex="-1" aria-labelledby="modalTiendaOnlineLabel" aria-hidden="true">
+	<!-- Modal global -->
+	<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
 	  <div class="modal-dialog modal-lg modal-dialog-centered">
 		<div class="modal-content shadow-lg rounded-3">
 
-		  <!-- HEADER AZUL -->
-		  <div class="modal-header" style="background-color: #0d6efd; color: white; border-bottom: none;">
-			<div>
-			  <h4 class="modal-title fw-semibold" id="modalTiendaOnlineLabel">Tienda Online</h4>
-			  <p class="small mb-0" style="color: #e3e3e3;">Aplicación web de gestión de productos para e-commerce</p>
-			</div>
-			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-		  </div>
+		  <div id="modal-header-dynamic" class="modal-header"></div>
 
-		  <div class="modal-body">
+		  <div class="modal-body" id="modal-body-dynamic"></div>
 
-			<!-- Descripción -->
-			<p class="text-secondary" style="text-align: justify;">
-			  Proyecto desarrollado como parte de una evaluación de portafolio, enfocado en la construcción de una aplicación 
-			  que gestiona productos obtenidos desde una API externa, utilizando JavaScript ES6+, OOP, DOM y asincronía.
-			</p>
-
-			<!-- Características -->
-			<h6 class="fw-bold mt-3">Características Principales</h6>
-			<ul class="small text-secondary">
-			  <li>Renderizado dinámico de productos desde API REST pública.</li>
-			  <li>Carro de compras funcional con actualización en tiempo real.</li>
-			  <li>Implementación de Programación Orientada a Objetos (OOP).</li>
-			  <li>Manejo de asincronía con fetch y async/await.</li>
-			  <li>Manejo de errores en solicitudes HTTP.</li>
-			</ul>
-
-			<!-- Tecnologías -->
-			<h6 class="fw-bold mt-4">Tecnologías Utilizadas</h6>
-			<div class="d-flex flex-wrap gap-2 small">
-			  <span class="badge bg-light text-dark border">JavaScript ES6+</span>
-			  <span class="badge bg-light text-dark border">API REST</span>
-			  <span class="badge bg-light text-dark border">OOP</span>
-			  <span class="badge bg-light text-dark border">DOM</span>
-			  <span class="badge bg-light text-dark border">HTML5</span>
-			  <span class="badge bg-light text-dark border">CSS3</span>
-			</div>
-
-			<!-- Acceso Repositorio -->
-			<div class="mt-4">
-			  <p class="small text-muted mb-1">Acceso al código fuente:</p>
-			  <a href="https://github.com/jcpizarrodev/TiendaOnline"
-				 target="_blank"
-				 class="btn btn-primary btn-sm px-3">
-				Ver Repositorio
-			  </a>
-			</div>
-
-		  </div>
-
-		  <!-- FOOTER GRIS -->
-		  <div class="modal-footer" style="background-color: #f1f1f1; border-top: none;">
-			<button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
-			  Cerrar
-			</button>
-		  </div>
+		  <div id="modal-footer-dynamic" class="modal-footer"></div>
 
 		</div>
 	  </div>
 	</div>
-		
-	<!-- Modal Profesional Ciberseguridad -->
-	<div class="modal fade" id="modalCiberseguridad" tabindex="-1" aria-labelledby="modalCiberseguridadLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-lg modal-dialog-centered">
-		<div class="modal-content shadow-lg rounded-3">
-
-		  <!-- HEADER AZUL -->
-		  <div class="modal-header" style="background-color: #0d6efd; color: white; border-bottom: none;">
-			<div>
-			  <h4 class="modal-title fw-semibold" id="modalCiberseguridadLabel">Ciberseguridad</h4>
-			  <p class="small mb-0" style="color: #e3e3e3;">Sitio educativo de concientización y protección digital</p>
-			</div>
-			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-		  </div>
-
-		  <div class="modal-body">
-
-			<!-- Descripción -->
-			<p class="text-secondary" style="text-align: justify;">
-			  Proyecto orientado a la educación en ciberseguridad, diseñado para informar sobre amenazas digitales actuales
-			  y promover buenas prácticas para una navegación segura. Incluye análisis de riesgos, recomendaciones y un 
-			  test interactivo de seguridad.
-			</p>
-
-			<!-- Características -->
-			<h6 class="fw-bold mt-3">Contenido y Funcionalidades</h6>
-			<ul class="small text-secondary">
-			  <li>Sección de amenazas con información detallada y acordeón explicativo.</li>
-			  <li>Carrusel con casos reales basados en reportes de CSIRT.</li>
-			  <li>Consejos de seguridad práctica: contraseñas, 2FA, respaldos, WiFi pública, entre otros.</li>
-			  <li>Formulario de contacto validado con Bootstrap.</li>
-			  <li>Test interactivo de seguridad con barra de progreso y resultados dinámicos.</li>
-			</ul>
-
-			<!-- Tecnologías -->
-			<h6 class="fw-bold mt-4">Tecnologías Utilizadas</h6>
-			<div class="d-flex flex-wrap gap-2 small">
-			  <span class="badge bg-light text-dark border">HTML5</span>
-			  <span class="badge bg-light text-dark border">CSS3</span>
-			  <span class="badge bg-light text-dark border">Bootstrap 5</span>
-			  <span class="badge bg-light text-dark border">Bootstrap Icons</span>
-			  <span class="badge bg-light text-dark border">JavaScript</span>
-			  <span class="badge bg-light text-dark border">jQuery</span>
-			  <span class="badge bg-light text-dark border">SweetAlert2</span>
-			</div>
-
-			<!-- Acceso Proyecto -->
-			<div class="mt-4">
-			  <p class="small text-muted mb-1">Acceso al sitio web:</p>
-			  <a href="https://jcpizarrodev.github.io/ciberseguridad/"
-				 target="_blank"
-				 class="btn btn-primary btn-sm px-3">
-				Ver Proyecto
-			  </a>
-			</div>
-
-		  </div>
-
-		  <!-- FOOTER GRIS -->
-		  <div class="modal-footer" style="background-color: #f1f1f1; border-top: none;">
-			<button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
-			  Cerrar
-			</button>
-		  </div>
-
-		</div>
-	  </div>
-	</div>
-		
-	
-<!-- Modal Profesional Venta de Libros -->
-<div class="modal fade" id="modalLibros" tabindex="-1" aria-labelledby="modalLibrosLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content shadow-lg rounded-3">
-
-      <!-- HEADER AZUL -->
-      <div class="modal-header" style="background-color: #0d6efd; color: white; border-bottom: none;">
-        <div>
-          <h4 class="modal-title fw-semibold" id="modalLibrosLabel">Sistema de Venta de Libros</h4>
-          <p class="small mb-0" style="color: #e3e3e3;">Plataforma web y API para gestión y comercialización de libros</p>
-        </div>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <!-- Descripción -->
-        <p class="text-secondary" style="text-align: justify;">
-          Sistema de venta de libros desarrollado con Node.js y Express, utilizando Handlebars (HBS) para la interfaz web 
-          y PostgreSQL como base de datos principal. La arquitectura está organizada en controladores, rutas y middleware 
-          personalizados, permitiendo un manejo claro y escalable de la lógica de negocio.
-        </p>
-
-        <!-- Características -->
-        <h6 class="fw-bold mt-3">Características Principales</h6>
-        <ul class="small text-secondary">
-          <li>Interfaz web con Handlebars (HBS) para navegación, catálogo y detalle de libros.</li>
-          <li>CRUD completo de libros (crear, listar, editar y eliminar).</li>
-          <li>Conexión a base de datos PostgreSQL mediante consultas parametrizadas.</li>
-          <li>API REST independiente para consumo de servicios desde Postman u otros clientes.</li>
-          <li>Separación clara entre vista (HBS) y API, evitando conflictos entre rutas.</li>
-          <li>Uso de middleware para validaciones, autenticación y control de acceso.</li>
-          <li>Estructura modular con controllers, services y rutas por responsabilidad.</li>
-        </ul>
-
-        <!-- Tecnologías -->
-        <h6 class="fw-bold mt-4">Tecnologías Utilizadas</h6>
-        <div class="d-flex flex-wrap gap-2 small">
-          <span class="badge bg-light text-dark border">Node.js</span>
-          <span class="badge bg-light text-dark border">Express</span>
-          <span class="badge bg-light text-dark border">PostgreSQL</span>
-          <span class="badge bg-light text-dark border">HBS / Views</span>
-          <span class="badge bg-light text-dark border">JavaScript</span>
-          <span class="badge bg-light text-dark border">Middleware</span>
-          <span class="badge bg-light text-dark border">REST API</span>
-        </div>
-
-        <!-- Acceso Proyecto -->
-        <div class="mt-4">
-          <p class="small text-muted mb-1">Acceso al proyecto:</p>
-          <a href="#" target="_blank" class="btn btn-primary btn-sm px-3">
-            Ver Repositorio
-          </a>
-        </div>
-
-      </div>
-
-      <!-- FOOTER GRIS -->
-      <div class="modal-footer" style="background-color: #f1f1f1; border-top: none;">
-        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
-          Cerrar
-        </button>
-      </div>
-
-    </div>
-  </div>
-</div>
-	
-	
 	
 	
     <footer class="bg-light text-center py-4 border-top mt-4">
@@ -518,5 +327,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+	<script src="assets/js/modalData.js"></script>
+    <script src="assets/js/modalLoader.js"></script>
 </body>
 </html>
