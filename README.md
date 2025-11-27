@@ -121,7 +121,7 @@ mejorándolo con los aprendizajes del módulo 10.
 
 ##  Proyectos Destacados
 
-Se incluyen link de proyectos destacados contenidos en https://github.com/jp21101326/TD_JS0081:
+Se incluyen link de proyectos destacados contenidos en https://github.com/jcpizarrodev/:
 
 -   CiberSeguridad - Protege tu Mundo Digital: Modulo_2/Evaluación del módulo
 -   Aplicación de Gestión de Productos en un E-Commerce: Modulo_4/M4_Evaluación de portafolio
