@@ -45,6 +45,7 @@ const projectData = {
       "Conexión robusta a PostgreSQL."
     ],
     tech: ["Node.js", "Express", "PostgreSQL", "HBS", "Middleware", "REST API"],
-    link: "#"
+    link: "https://m9-evaluacion-portafolio.onrender.com/libros"
   }
 };
+
