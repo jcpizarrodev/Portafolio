@@ -29,7 +29,7 @@ const projectData = {
       "Manejo de errores HTTP."
     ],
     tech: ["JavaScript ES6+", "API REST", "OOP", "DOM", "HTML5", "CSS3"],
-    link: "https://jcpizarrodev.github.io/portafolio/"
+    link: "https://github.com/jcpizarrodev/TiendaOnline"
   },
 
   libros: {
@@ -48,4 +48,5 @@ const projectData = {
     link: "https://m9-evaluacion-portafolio.onrender.com/libros"
   }
 };
+
 
